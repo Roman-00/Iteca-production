@@ -13,7 +13,7 @@ module.exports = {
         port: 3000
     },
     resolve: {
-        extensions: ['.jsx', '.css', '.js', '.json', 'less'],
+        extensions: ['.jsx', '.css', '.js', '.json', 'less', 'png', 'jpg'],
     },
     plugins: [
         new HTMLWebpackPlugin({template: "./src/index.html"}),

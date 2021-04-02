@@ -1,36 +1,110 @@
-/* Eric Meyer's CSS Reset */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
+.clearfix:after {
+    content: "";
+    display:block;
+    clear: both;
 }
 
-svg {
-    width: 20px;
-    height: 20px;
-    fill: #fff;
+html {
+    min-width: 320px;
 }
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #333;
+    background-color: #fff;
+}
+
+.header, .content-wrapper, .container, .content, .footer {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: row;
+}
+
+.content-wrapper {
+    margin: 0 auto;
+    flex-direction: column;
+    min-width: 320px;
+    max-width: 1200px;
+}
+
+.container {
+    flex-wrap: nowrap;
+}
+
+.content {
+    width: 100%;
+    flex-direction: column;
+    flex: 1 1 auto;
+    order: 0;
+    margin-right: 30px;
+    padding: 20px;
+    background-color: #fff;
+    -webkit-box-shadow: 4px 4px 20px 0px rgba(34, 60, 80, 0.23);
+    -moz-box-shadow: 4px 4px 20px 0px rgba(34, 60, 80, 0.23);
+    box-shadow: 4px 4px 20px 0px rgba(34, 60, 80, 0.23);
+}
+
+.sidebar {
+    padding: 20px;
+    background-color: #fff;
+    flex: 0 0 auto;
+    -webkit-box-shadow: 4px 4px 20px 0px rgba(34, 60, 80, 0.23);
+    -moz-box-shadow: 4px 4px 20px 0px rgba(34, 60, 80, 0.23);
+    box-shadow: 4px 4px 20px 0px rgba(34, 60, 80, 0.23);
+}
+
+.sidebar1 {
+    width: 250px;
+    order: 1;
+}
+
+/* Home Style Css  */
+
+.home__title {
+    text-align: center;
+}
+
+.home__figure {
+    margin: 20px auto;
+}
+
+.btn {
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 530px;
+    padding: 10px 0;
+    margin: 10px auto;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.btn:last-of-type {
+    margin-bottom: 0px;
+}
+
+.btn__to--orange {
+    background-color: #e25926;
+    color: #fff;
+}
+
+.btn__to--blue {
+    background-color: #4e73df;
+    color: #fff;
+}
+
+/* Home Style Css  */

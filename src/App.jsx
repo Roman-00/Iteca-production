@@ -1,4 +1,5 @@
 import React from 'react';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 import { Home } from './Layout/Home';
 
@@ -6,7 +7,13 @@ import { Home } from './Layout/Home';
 const App = () => {
     return (
         <>
-            <Home />
+            <main>
+                <Router>
+                    <Switch>
+                        <Route exact path="/" component={Home}/>
+                    </Switch>
+                </Router>
+            </main>
         </>
     );
 };
