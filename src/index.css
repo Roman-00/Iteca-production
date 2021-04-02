@@ -50,11 +50,16 @@ html, body {
     flex: 1 1 auto;
     order: 0;
     margin-right: 30px;
+    margin-bottom: 30px;
     padding: 20px;
     background-color: #fff;
     -webkit-box-shadow: 4px 4px 20px 0px rgba(34, 60, 80, 0.23);
     -moz-box-shadow: 4px 4px 20px 0px rgba(34, 60, 80, 0.23);
     box-shadow: 4px 4px 20px 0px rgba(34, 60, 80, 0.23);
+}
+
+.content:last-of-type {
+    margin-bottom: 0;
 }
 
 .sidebar {
@@ -69,6 +74,7 @@ html, body {
 .sidebar1 {
     width: 250px;
     order: 1;
+    max-height: 300px;
 }
 
 /* Home Style Css  */

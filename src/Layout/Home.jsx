@@ -15,29 +15,54 @@ const Home = () => {
 
             <div className="content-wrapper">
                 <div className="container clearfix">
-                    <main className="content">
-                        <div className="content__text">
-                            <h2 className="home__title">
-                                Уважаемый Экспонент!
-                            </h2>
-                            <p className="home_except">
-                                В этом разделе вы можете заказать дополнительные услуги, выбрать мебель и оборудование для Вашего 
-                                стенда, а также ознакоситься с общей информацией, правилами и расписанием работы выставки. 
-                            </p>
-                        </div>
-                        <figure className="home__figure">
-                            <img src={stand} alt="картинка"/>
-                        </figure>
-                        <Link to="/" className="btn btn__to btn__to--orange">
-                            Заказать дополнительные услуги
-                        </Link>
-                        <Link to="/" className="btn btn__to btn__to--blue">
-                            Изменить существующий заказ
-                        </Link>
-                        <Link to="/" className="btn btn__to btn__to--blue">
-                            Отказаться от технических услуг
-                        </Link>
-                    </main>
+                    <div className="wrap">
+                        <main className="content">
+                            <div className="content__text">
+                                <h2 className="home__title">
+                                    Уважаемый Экспонент!
+                                </h2>
+                                <p className="home_except">
+                                    В этом разделе вы можете заказать дополнительные услуги, выбрать мебель и оборудование для Вашего 
+                                    стенда, а также ознакоситься с общей информацией, правилами и расписанием работы выставки. 
+                                </p>
+                            </div>
+                            <figure className="home__figure">
+                                <img src={stand} alt="картинка"/>
+                            </figure>
+                            <Link to="/" className="btn btn__to btn__to--orange">
+                                Заказать дополнительные услуги
+                            </Link>
+                            <Link to="/" className="btn btn__to btn__to--blue">
+                                Изменить существующий заказ
+                            </Link>
+                            <Link to="/" className="btn btn__to btn__to--blue">
+                                Отказаться от технических услуг
+                            </Link>
+                        </main>
+                        <main className="content">
+                            <div className="content__text">
+                                <h2 className="home__title">
+                                    Общая информация, расписание, правила
+                                </h2>
+                                <p className="home_except">
+                                    В этом разделе вы можете заказать дополнительные услуги, выбрать мебель и оборудование для Вашего 
+                                    стенда, а также ознакоситься с общей информацией, правилами и расписанием работы выставки. 
+                                </p>
+                            </div>
+                            <figure className="home__figure">
+                                <img src={stand} alt="картинка"/>
+                            </figure>
+                            <Link to="/" className="btn btn__to btn__to--orange">
+                                Заказать дополнительные услуги
+                            </Link>
+                            <Link to="/" className="btn btn__to btn__to--blue">
+                                Изменить существующий заказ
+                            </Link>
+                            <Link to="/" className="btn btn__to btn__to--blue">
+                                Отказаться от технических услуг
+                            </Link>
+                        </main>
+                    </div>
                     <aside className="sidebar sidebar1">
                         <HomeLsit/>
                     </aside>
