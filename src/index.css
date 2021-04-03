@@ -24,6 +24,15 @@ html, body {
     background-color: #fff;
 }
 
+figure {
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+    margin: 0;
+    padding: 0;
+}
+
 .header, .content-wrapper, .container, .content, .footer {
     display: -webkit-flex;
     display: -moz-flex;
@@ -49,7 +58,6 @@ html, body {
     flex-direction: column;
     flex: 1 1 auto;
     order: 0;
-    margin-right: 30px;
     margin-bottom: 30px;
     padding: 20px;
     background-color: #fff;
@@ -62,8 +70,12 @@ html, body {
     margin-bottom: 0;
 }
 
+.wrap {
+    margin-right: 30px;
+}
+
 .sidebar {
-    padding: 20px;
+    padding: 20px 30px 20px;
     background-color: #fff;
     flex: 0 0 auto;
     -webkit-box-shadow: 4px 4px 20px 0px rgba(34, 60, 80, 0.23);
@@ -74,13 +86,17 @@ html, body {
 .sidebar1 {
     width: 250px;
     order: 1;
-    max-height: 300px;
+    max-height: 415px;
 }
 
 /* Home Style Css  */
 
 .home__title {
     text-align: center;
+}
+
+.home__title {
+    margin-bottom: 10px;
 }
 
 .home__figure {
@@ -99,8 +115,45 @@ html, body {
     font-weight: 500;
 }
 
+.btn__link {
+    position: relative;
+    display: block;
+    width: 200px;
+    padding: 10px 0;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 500;
+}
+
+.content__right--btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: -20px;
+}
+
+.content__right--btn .btn__link {
+    margin-right: 30px;
+}
+
 .btn:last-of-type {
     margin-bottom: 0px;
+}
+
+.btn__to {
+    position: relative;
+}
+
+.btn__to-thumb {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    background-color: #4262be;
 }
 
 .btn__to--orange {
@@ -113,4 +166,94 @@ html, body {
     color: #fff;
 }
 
+.color {
+    color: red;
+}
+
+.content__column--wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.content__right--ul {
+    padding: 0;
+}
+
+.content__right--text {
+    display: block;
+    margin-left: -20px;
+    margin-bottom: 20px;
+}
+
+.manager__sidebar--info span:last-of-type {
+    margin-bottom: 0;
+}
+
+.manager__sidebar--figure {
+    margin: 20px 0;
+}
+
+.manager__position {
+    font-style: italic;
+}
+
+.manager__name {
+    margin: 0 0 5px;
+}
+
+.manager__contact--info {
+    margin: 10px 0;
+}
+
+.manager__contact--email,
+.manager__contact--phone,
+.manager__contact--city,
+.manager__contact--country {
+    display: flex;
+    align-items: center;
+}
+
+.manager__contact--email span,
+.manager__contact--phone span,
+.manager__contact--city span,
+.manager__contact--country span {
+    margin-left: 10px;
+}
 /* Home Style Css  */
+
+/* Services Style Css */
+
+.services__block {
+    margin-top: 20px;
+}
+
+.services__block--left-title {
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.services__list {
+    margin-left: 18px;
+    padding: 0;
+    font-size: 14px;
+}
+
+.services__calculator {
+    margin-top: 30px;
+}
+
+.services__calculator--title,
+.services__calculator--except {
+    text-align: center;
+}
+
+.services__calculator--except {
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+
+/* Services Style Css */
