@@ -2,56 +2,45 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 
 
-const ServicesCalcItem = () => {
+const ServicesCalcItem = (props) => {
 
-    const [value, setValue] = React.useState("");
-  const [valueLength, setValueLength] = React.useState(0);
-  const [valueMoreThanTen, setValueMoreThanTen] = React.useState(0);
-  const price = 30;
+    const { b_ostrov, b_poluostrov, b_ugol, d_plstenda, friza, maket, status } = props;
 
-  React.useEffect(() => {
-    if (valueLength > 10) {
-      setValueMoreThanTen(valueLength - 10);
-    } else if (valueLength < 11) {
-      setValueMoreThanTen(0);
+    const [value, setValue] = useState('');
+    const [checked, setChecked] = useState(false);
+
+    const handleChecked = () => {
+      if (b_ugol) {
+        setChecked(checked.false)
+      } else if(!b_ugol) {
+        setChecked(checked.true)
+      }
     }
-  }, [valueLength]);
 
-  const senRequest = () => {
-    const requestObject = { valueMoreThanTen, price: valueMoreThanTen * price, value };
-    fetch("https://itecaa-react-test-default-rtdb.firebaseio.com/spamle.json", {
-      method: "POST",
-      body: JSON.stringify(requestObject)
-    });
-  };
-
-  const handleChange = (e) => {
-    setValue(e.target.value);
-    if (e.nativeEvent.data !== " ") {
-      setValueLength(e.target.value.length);
-    }
-  };
-
-  return (
-    <>
-      <div className="services__calculator--interface">
-        <input
-          type="text"
-          className="name__stand"
-          placeholder="Впишите надпись здесь_"
-          value={value}
-          onChange={handleChange}
-        />
-        <p>text: {valueMoreThanTen}</p>
-        <p>
-          {valueMoreThanTen > 0 && `цена: ${valueMoreThanTen * price} рублей`}
-        </p>
-        <button type="button" onClick={() => senRequest()}>
-          Отправить
-        </button>
-      </div>
-    </>
-  );
+    
+    return (
+      <>
+       {d_plstenda}
+        <div className="services__calculator--interface">
+          <input 
+            type="text" 
+            className="services__calculator--input"
+          />
+          <div className="services__calculator--result">
+           <div className="calculator__result--block">
+             <label className="calculator__result--label">
+               Угол
+             </label>
+             <input 
+              type="checkbox" 
+              className="calculator__result--checkbox"
+              checked={checked} onChange={handleChecked}
+            />
+           </div>
+          </div>
+        </div>
+      </>
+    )
 
 };
 
