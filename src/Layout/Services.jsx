@@ -7,6 +7,7 @@ import { Aside } from './Aside';
 
 import { ServicesList } from '../components/Services/ServicesList';
 import { ServicesCalc } from '../components/Calculator/ServicesCalc';
+import { Maket } from '../components/Maket/Maket';
 
 const Services = () => {
 
@@ -42,6 +43,12 @@ const Services = () => {
                                         </span>
                                         <ServicesList list={list} />
                                     </div>
+                                    <div className="services__block--right">
+                                        <span className="services__block--right-title">
+                                            Схема Вашего базового стенда: 
+                                        </span>
+                                        <Maket/>
+                                    </div>
                                 </div>
                                 <div className="services__calculator">
                                     <h2 className="services__calculator--title">
@@ -49,7 +56,7 @@ const Services = () => {
                                     </h2>
                                     <p className="services__calculator--except">
                                         В стоимость оборудования стенда уже включена надпись до 15 символов на каждую открытую сторону.
-                                        Каждая дополнительная буква будет стоить _____ . Пожалуйста, впишите Вашу надпись в строку, 
+                                        Каждая дополнительная буква будет стоить 3 у.е . Пожалуйста, впишите Вашу надпись в строку, 
                                         расположенную ниже. Итоговая стоимость ссумируется автоматически.
                                     </p>
                                     <div className="services__calculator--container">
