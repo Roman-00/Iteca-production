@@ -33,6 +33,11 @@ h1, h2, h3, h4, h5, h6, p, a {
     padding: 0;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 /*input[type="checkbox"] {
     -webkit-appearance: none;
     appearance: none;
@@ -365,6 +370,25 @@ h1, h2, h3, h4, h5, h6, p, a {
 .btn__next {
     max-width: 230px;
     margin: 0;
+}
+
+.right__block-img {
+    width: 300px;
+    height: 250px;
+}
+
+.right__block--button {
+    width: 100%;
+}
+
+.right__block-img img {
+    width: 300px;
+    height: 250px;
+    object-fit: contain;
+}
+
+.btn__to-thumb-orange {
+    background-color: transparent;
 }
 
 

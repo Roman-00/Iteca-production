@@ -15,7 +15,7 @@ const Maket = () => {
     }, [])
 
     return <>
-        <MaketList object={object} />
+        <MaketList key={'0'} object={object} />
     </>
 
 };
